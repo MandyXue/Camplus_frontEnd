@@ -1,0 +1,79 @@
+
+/* Carousel base class */
+.carousel {
+	margin-top: 58px;
+	height: 500px;
+	margin-bottom: 60px;
+}
+/* Since positioning the image, we need to help out the caption */
+.carousel-caption {
+	z-index: 10;
+}
+
+/* Declare heights because of positioning of img element */
+.carousel .item {
+	height: 500px;
+	background-color: #777;
+}
+.carousel-inner > .item > img {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: auto;
+}
+
+.carousel-caption {
+	bottom: 170px;
+}
+
+@media screen and (max-width: 960px) {
+	.carousel {
+		height: 300px;
+	}
+	.carousel .item {
+		height: 300px;
+	}
+	.carousel-caption {
+		bottom: 20px;
+	}
+}
+
+@media screen and (max-width: 533px) {
+	.carousel {
+		height: 180px;
+		margin-bottom: 0px;
+	}
+	.carousel .item {
+		height: 180px;
+	}
+	.carousel-caption {
+		bottom: 10px;
+	}
+	h4 {
+		font-weight: normal;
+		font-size: 13px;
+	}
+}
+
+.search input[type="submit"] {
+    color: #FFF;
+    background: #c0d7e9;
+    font-size: 13px;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+    padding: .8em 2em;
+    text-transform: uppercase;
+}
+
+.search input[type="text"] {
+    font-size: 13px;
+    color: #C8C8C8;
+    width: 35%;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    background: #eeeeee;
+    padding: .8em;
+}
