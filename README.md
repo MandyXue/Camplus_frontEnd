@@ -24,36 +24,36 @@
 
 1. 完成链接
 2. 导航栏右边的session获取判断问题，代码示例：
-	```html
-	<!-- get session -->
-    <c:set value="${sessionScope.get('userId')}" var="user"></c:set>
-    <c:if test="${user!=null}">
-        <ul class="nav navbar-right">
-            ...
-        </ul>
-    </c:if>
-    <!-- no session -->
-    <c:if test="${user==null}">
-        <ul class="nav navbar-nav navbar-nav-right">
-            <button type="button" onclick="signup()" class="btn btn-signup navbar-btn">Sign
-                up
-            </button>
-            <button type="button" onclick="signin()" class="btn btn-signin navbar-btn">Sign
-                in
-            </button>
-        </ul>
-    </c:if>
-	```
+```html
+<!-- get session -->
+<c:set value="${sessionScope.get('userId')}" var="user"></c:set>
+<c:if test="${user!=null}">
+    <ul class="nav navbar-right">
+        ...
+    </ul>
+</c:if>
+<!-- no session -->
+<c:if test="${user==null}">
+    <ul class="nav navbar-nav navbar-nav-right">
+        <button type="button" onclick="signup()" class="btn btn-signup navbar-btn">Sign
+            up
+        </button>
+        <button type="button" onclick="signin()" class="btn btn-signin navbar-btn">Sign
+            in
+        </button>
+    </ul>
+</c:if>
+```
 
 ## Glyphicons 字体图标问题、图片显示问题等
 
 解决方案：在```web/WEB-INF/web.xml```中添加映射：
-	```xml
-	<servlet-mapping>
-	    <servlet-name>default</servlet-name>
-	    <url-pattern>*.svg</url-pattern>
-	</servlet-mapping>
-	```
+```xml
+<servlet-mapping>
+    <servlet-name>default</servlet-name>
+    <url-pattern>*.svg</url-pattern>
+</servlet-mapping>
+```
 可参考：[iTrip/web.xml](https://github.com/MandyXue/itrip_v2.0/blob/master/web/WEB-INF/web.xml)
 
 ## Ajax
