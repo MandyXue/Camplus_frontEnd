@@ -1,0 +1,17 @@
+.selfinfo {
+	margin-top: 58px;
+}
+
+p {
+	color: rgba(0,0,0,.5);
+}
+
+@media screen and (min-width: 768px) {
+	.selfinfo {
+		width: 40%;
+	}
+
+	.text-center .btn {
+		width: 30%;
+	}
+}

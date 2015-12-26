@@ -10,9 +10,10 @@
     <!-- bootstrap js -->
     <script src="external/jQuery/jquery-1.11.3.min.js"></script>
     <script src="external/bootstrap/js/bootstrap.min.js"></script>
+    <script src="js/selfinfo.js"></script>
     <!-- custom -->
     <link rel="stylesheet" type="text/css" href="css/navbar.css">
-    <link rel="stylesheet" type="text/css" href="css/index.css">
+    <link rel="stylesheet" type="text/css" href="css/selfinfo.css">
 </head>
 <body>
     <div class="navbar navbar-inverse navbar-fixed-top">
@@ -58,6 +59,40 @@
                 </ul>
             </div>
         </div>
+    </div>
+    <div class="container selfinfo">
+        <div class="page-header text-center">
+            <h1>Self Information</h1>
+            <p>You can change your information here.</p>
+        </div>
+        <form method="post" action="" id="selfInfoChangeForm">
+            <div class="panel panel-default">
+                <div class="panel-body">
+                    <div class="form-group" id="uid-form">
+                        <label>Student Number:</label>
+                        <input type="text"  name="uid" class="form-control" id="uid" value="1352834" contenteditable="false">
+                    </div>
+                    <div class="form-group" id="uname-form">
+                        <label>User Name:</label>
+                        <input type="text"  name="uname" class="form-control" id="uname" value="Fowafolo" placeholder="need more than 6 characters...">
+                        <span class="glyphicon glyphicon-remove form-control-feedback" aria-hidden="true"></span>
+                    </div>
+                    <div class="form-group" id="pwd-form">
+                        <label>Password:</label>
+                        <input type="password"  name="password" class="form-control" id="password" value="" placeholder="need more than 6 characters...">
+                        <span class="glyphicon glyphicon-remove form-control-feedback" aria-hidden="true"></span>
+                    </div>
+                    <div class="form-group" id="contact-form">
+                        <label>Contact Number:</label>
+                        <input type="text"  name="contact" class="form-control" id="contact" value="">
+                        <span class="glyphicon glyphicon-remove form-control-feedback" aria-hidden="true"></span>
+                    </div>
+                    <div class="text-center">
+                        <button type="submit" class="btn btn-success">Submit</button>
+                    </div>
+                </div>
+            </div>
+        </form>
     </div>
     
     <hr>

@@ -63,6 +63,8 @@ a.navbar-brand:hover{
 footer {
     margin-bottom: 30px;
     text-align: center;
+    color: rgba(0,0,0,.5);
+    font-size: 15px;
 }
 
 hr {

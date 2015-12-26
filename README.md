@@ -56,5 +56,9 @@
 	```
 可参考：[iTrip/web.xml](https://github.com/MandyXue/itrip_v2.0/blob/master/web/WEB-INF/web.xml)
 
+## Ajax
+
+用不用呢:confused:
+
 ----
 未完待续……
