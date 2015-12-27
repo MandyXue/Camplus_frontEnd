@@ -1,13 +1,9 @@
-.selfinfo {
-	margin-top: 58px;
-}
-
 p {
 	color: rgba(0,0,0,.5);
 }
 
 @media screen and (min-width: 768px) {
-	.selfinfo {
+	.body {
 		width: 40%;
 	}
 

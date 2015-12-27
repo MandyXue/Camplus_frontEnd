@@ -19,6 +19,7 @@
 	```
 3. 建议jsp封装，将jsp放在```web/WEB-INF```目录中，不要直接调用.jsp
 	目录结构可参考：[iTrip](https://github.com/MandyXue/itrip_v2.0)
+4. login和register用原来的即可，路径引用可以参考这里的文件
 
 ## 导航栏
 

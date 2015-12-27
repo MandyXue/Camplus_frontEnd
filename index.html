@@ -15,7 +15,7 @@
     <link rel="stylesheet" type="text/css" href="css/index.css">
 </head>
 <body>
-    <div class="navbar navbar-inverse navbar-fixed-top">
+    <div class="navbar navbar-inverse">
         <div class="container">
             <div class="navbar-header">
                 <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
@@ -28,6 +28,7 @@
                 <a class="navbar-brand" href=""></a>
             </div>
             <div class="collapse navbar-collapse" id="navbar">
+                <!-- TODO: 这里要添加所有标签的URL -->
                 <ul class="nav navbar-nav">
                     <li class="active"><a href="">Home</a></li>
                     <li><a href="">Carpool</a></li>
@@ -50,7 +51,7 @@
                     </li>
                 </ul>
                 <ul class="nav navbar-nav navbar-right">
-                    <!-- TODO: deal with session -->
+                    <!-- TODO: 这里要处理一下session，现在注释的部分是没有登录的 -->
                     <button type="button" onclick="signup()" class="btn btn-signup navbar-btn">Sign up</button>
                     <button type="button" onclick="signin()" class="btn btn-signin navbar-btn">Sign in</button>
                     <!-- <li><a href="">Fowafolo An</a></li>
@@ -59,7 +60,7 @@
             </div>
         </div>
     </div>
-    <div id="carousel" class="carousel slide" data-ride="carousel">
+    <div id="carousel" class="carousel slide body" data-ride="carousel">
         <!-- Indicators -->
         <ol class="carousel-indicators">
             <li data-target="#carousel" data-slide-to="0" class="active"></li>
@@ -152,6 +153,7 @@
         <h3 class="text-center">Contact us</h3>
         <p>If you have any questions about us, please send us an email.</p>
         <br>
+        <!-- TODO: 发送邮件的接口 -->
             <div class="search">
                 <form action="" method="post">
                     <textarea type="text" name="messageToSend" placeholder="Message to be sent..." cols="50" rows="3"></textarea>
@@ -165,6 +167,7 @@
         <div class="home-footer-text">
             <p>Address: 4800 Cao An Road, Jiading District, Shanghai</p>
             <p>email: Fowafolo@gmail.com</p>
+            <!-- TODO: 添加camplus的url -->
             <p>&copy; 2015-2016  &middot; <a href="home">Camplus</a> &middot; All rights reserved.</p>
         </div>
     </footer>

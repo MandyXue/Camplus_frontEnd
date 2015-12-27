@@ -6,14 +6,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Camplus</title>
     <!-- bootstrap css -->
-    <link href="external/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../../external/bootstrap/css/bootstrap.min.css" rel="stylesheet">
     <!-- bootstrap js -->
-    <script src="external/jQuery/jquery-1.11.3.min.js"></script>
-    <script src="external/bootstrap/js/bootstrap.min.js"></script>
-    <script src="js/selfinfo.js"></script>
+    <script src="../../external/jQuery/jquery-1.11.3.min.js"></script>
+    <script src="../../external/bootstrap/js/bootstrap.min.js"></script>
     <!-- custom -->
-    <link rel="stylesheet" type="text/css" href="css/navbar.css">
-    <link rel="stylesheet" type="text/css" href="css/selfinfo.css">
+    <link rel="stylesheet" type="text/css" href="../../css/navbar.css">
+    <script type="text/javascript">
+        var i = 3; 
+        var intervalid; 
+        intervalid = setInterval("fun()", 1000); 
+        function fun() { 
+            if (i == 0) { 
+                // TODO: 这里这个url有可能会改
+                window.location.href = "/camplus/carpool/select"; 
+                clearInterval(intervalid); 
+            } 
+            $("#timer").html(i); 
+            i--; 
+        } 
+    </script>
 </head>
 <body>
     <div class="navbar navbar-inverse">
@@ -31,7 +43,7 @@
             <div class="collapse navbar-collapse" id="navbar">
                 <ul class="nav navbar-nav">
                     <li><a href="">Home</a></li>
-                    <li><a href="">Carpool</a></li>
+                    <li class="active"><a href="">Carpool</a></li>
                     <li><a href="">Course</a></li>
                     <li class="dropdown">
                         <a href="#" data-toggle="dropdown">Gallery<span class="caret"></span></a>
@@ -62,38 +74,13 @@
     </div>
     <div class="container body">
         <div class="page-header text-center">
-            <h1>Self Information</h1>
-            <p>You can change your information here.</p>
+            <h1>Success!</h1>
+            <p>Your comment has been added.</p>
         </div>
-        <!-- TODO: 表单提交 -->
-        <form method="post" action="" id="selfInfoChangeForm">
-            <div class="panel panel-default">
-                <div class="panel-body">
-                    <div class="form-group" id="uid-form">
-                        <label>Student Number:</label>
-                        <input type="text"  name="uid" class="form-control" id="uid" value="1352834" contenteditable="false">
-                    </div>
-                    <div class="form-group" id="uname-form">
-                        <label>User Name:</label>
-                        <input type="text"  name="uname" class="form-control" id="uname" value="Fowafolo" placeholder="need more than 6 characters...">
-                        <span class="glyphicon glyphicon-remove form-control-feedback" aria-hidden="true"></span>
-                    </div>
-                    <div class="form-group" id="pwd-form">
-                        <label>Password:</label>
-                        <input type="password"  name="password" class="form-control" id="password" value="" placeholder="need more than 6 characters...">
-                        <span class="glyphicon glyphicon-remove form-control-feedback" aria-hidden="true"></span>
-                    </div>
-                    <div class="form-group" id="contact-form">
-                        <label>Contact Number:</label>
-                        <input type="text"  name="contact" class="form-control" id="contact" value="">
-                        <span class="glyphicon glyphicon-remove form-control-feedback" aria-hidden="true"></span>
-                    </div>
-                    <div class="text-center">
-                        <button type="submit" class="btn btn-success">Submit</button>
-                    </div>
-                </div>
-            </div>
-        </form>
+        <div class="text-center">
+            <h4>It will jump back after <label id="timer" style="color:red;">3</label> seconds.</h4>
+            <p><a href="">Or click here to jump back</a></p>
+        </div>
     </div>
     
     <hr>

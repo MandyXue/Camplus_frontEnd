@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+  <head>
+    <meta charset="utf-8">
+    <title>Login | Camplus</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <!-- CSS -->
+    <link rel="stylesheet" href="external/loginAndRegister/css/reset.css">
+    <link rel="stylesheet" href="external/loginAndRegister/css/supersized.css">
+    <link rel="stylesheet" href="external/loginAndRegister/css/style.css">
+    <!-- jQuery -->
+    <script src="external/jQuery/jquery-1.11.3.min.js"></script>
+    <script src="external/jQuery/jquery.validate.js"></script>
+    <script src="external/loginAndRegister/js/supersized.3.2.7.min.js"></script>
+    <script src="external/loginAndRegister/js/supersized-init.js"></script>
+    <!-- custom js -->
+    <script src="external/loginAndRegister/js/customer-validate.js"></script>
+  </head>
+  <body>
+    <div class="page-container">
+      <h1>Log in</h1>
+      <!-- TODO: 验收一下form的提交有没有问题 -->
+      <form action="/camplus/index" method="post" id="userLogin" style="color: #d04f24;">
+        <input type="text" name="userId" class="userId" placeholder="Student Id" id="userId" style="font-weight: 900;">
+        <input type="password" name="userPassword" class="userPassword" placeholder="Password" id="userPassword" style="font-weight: 900">
+        <button type="submit"style="font-weight: 900">LogIn</button>
+      </form>
+      <div class="connect">
+        <!-- TODO: 添加链接至注册 -->
+        <p>Or sign up  <a href="">here</a></p>
+      </div>
+    </div>
+  </body>
+</html>
