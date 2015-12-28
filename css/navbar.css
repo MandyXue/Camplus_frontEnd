@@ -1,6 +1,7 @@
 .navbar {
 	height: 58px;
     border-radius: 0;
+    z-index: 20;
 }
 
 .navbar-nav {
