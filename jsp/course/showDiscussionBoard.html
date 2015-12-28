@@ -12,7 +12,7 @@
     <script src="../../external/bootstrap/js/bootstrap.min.js"></script>
     <!-- custom -->
     <link rel="stylesheet" type="text/css" href="../../css/navbar.css">
-    <link rel="stylesheet" type="text/css" href="../../css/carpool.css">
+    <link rel="stylesheet" type="text/css" href="../../css/course.css">
 </head>
 <body>
     <div class="navbar navbar-inverse">
@@ -60,113 +60,182 @@
         </div>
     </div>
     <div class="container body">
-        <div class="page-header text-center">
-            <!-- TODO: 填入课程名称 -->
-            <h1>操作系统</h1>
-            <p>Share your opinions and view others' comments.</p>
+        <div>
+            <h1 class="text-center">Class Detail</h1>
+            <!-- TODO: 填入课程名称和细节 -->
+            <h3 class="text-center">操作系统</h3>
+            <br>
+            <table class="table table-hover table-striped table-bordered detail">
+                <tbody>
+                    <tr>
+                        <td>Class Number: </td>
+                        <td><label>27633</label></td>
+                    </tr>
+                    <tr>
+                        <td>Credit Hour: </td>
+                        <td><label>4.0</label></td>
+                    </tr>
+                    <tr>
+                        <td>Class Hour: </td>
+                        <td><label>4</label> lessons/week</td>
+                    </tr>
+                    <tr>
+                        <td>Teacher Name: </td>
+                        <td><label>张惠娟</label></td>
+                    </tr>
+                    <tr>
+                        <td>Professional Title: </td>
+                        <td><label>副教授</label></td>
+                    </tr>
+                    <tr>
+                        <td>Class Time: </td>
+                        <td><label>二:1-2(博楼B316);四:3-4(博楼B316)</label></td>
+                    </tr>
+                    <tr>
+                        <td>Remarks: </td>
+                        <td><label>/</label></td>
+                    </tr>
+                    <tr>
+                        <td>Illustration: </td>
+                        <td><label>/</label></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <hr>
+        <div class="text-center">
+            <h1>Share Message</h1>
+            <br>
+        </div>
+        <div class="panel panel-success">
+            <div class="panel-heading">
+                <h4>Share your opinions here:</h4>
+            </div>
+            <!-- TODO: 表单提交 -->
+            <div class="panel-body">
+                <form>
+                    <div class="form-group">
+                        <label>Title:</label>
+                        <input type="text" class="form-control" placeholder="Your subject of message">
+                    </div>
+                    <div class="form-group">
+                        <label>Message:</label>
+                        <textarea type="text" class="form-control" placeholder="Your message..."></textarea>
+                    </div>
+                    <div class="text-center">
+                        <button type="submit" class="btn btn-success text-right">Submit</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <hr>
+        <div class="text-center">
+            <h1>Message Board</h1>
+            <h4>View others' opinion on this class.</h4>
+            <br>
         </div>
         <div class="center">
-        <div id="masonry" class="container-fluid">
-            <div class="box">
-                <div class="thumbnail">
-                    <br>
-                    <div class="text-center">
-                        <div class="circle"><h4>Fowafolo</h4></div>
-                    </div>
-                    <div class="caption">
-                        <h3 class="text-center">考试范围</h3>
-                        <hr>
-                        <p>谁知道这门课的考试范围和重点呀？谁知道这门课的考试范围和重点呀？谁知道这门课的考试范围和重点呀？谁知道这门课的考试范围和重点呀？谁知道这门课的考试范围和重点呀？谁知道这门课的考试范围和重点呀？</p>
-                        <hr>
-                        <p class="text-right">2015-08-07 12:35</p>
-                    </div>
-                </div>
-            </div>
-            <div class="box">
-                <div class="thumbnail">
-                    <br>
-                    <div class="text-center">
-                        <div class="circle"><h4>Fowafolo</h4></div>
-                    </div>
-                    <div class="caption">
-                        <h3 class="text-center">考试范围</h3>
-                        <hr>
-                        <p>谁知道这门课的考试范围和重点呀？</p>
-                        <hr>
-                        <p class="text-right">2015-08-07 12:35</p>
+            <br>
+            <div id="masonry" class="container-fluid">
+                <!-- TODO: 一个box为一个单位，动态添加评论 -->
+                <div class="box">
+                    <div class="thumbnail">
+                        <br>
+                        <div class="text-center">
+                            <div class="circle"></div>
+                        </div>
+                        <div class="caption">
+                            <h3 class="text-center">考试范围</h3>
+                            <hr>
+                            <p>谁知道这门课的考试范围和重点呀？谁知道这门课的考试范围和重点呀？谁知道这门课的考试范围和重点呀？谁知道这门课的考试范围和重点呀？谁知道这门课的考试范围和重点呀？谁知道这门课的考试范围和重点呀？</p>
+                            <hr>
+                            <p class="text-right">Committed by <label>Fowafolo</label></p>
+                            <p class="text-right">2015-08-07 12:35</p>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="box">
-                <div class="thumbnail">
-                    <br>
-                    <div class="text-center">
-                        <div class="circle"><h4>Fowafolo</h4></div>
-                    </div>
-                    <div class="caption">
-                        <h3 class="text-center">考试范围</h3>
-                        <hr>
-                        <p>谁知道这门课的考试范围和重点呀？</p>
-                        <hr>
-                        <p class="text-right">2015-08-07 12:35</p>
-                    </div>
-                </div>
-            </div>
-            <div class="box">
-                <div class="thumbnail">
-                    <br>
-                    <div class="text-center">
-                        <div class="circle"><h4>Fowafolo</h4></div>
-                    </div>
-                    <div class="caption">
-                        <h3 class="text-center">考试范围</h3>
-                        <hr>
-                        <p>谁知道这门课的考试范围和重点呀？</p>
-                        <hr>
-                        <p class="text-right">2015-08-07 12:35</p>
+                <div class="box">
+                    <div class="thumbnail">
+                        <br>
+                        <div class="text-center">
+                            <div class="circle"></div>
+                        </div>
+                        <div class="caption">
+                            <h3 class="text-center">考试范围</h3>
+                            <hr>
+                            <p>谁知道这门课的考试范围和重点呀？</p>
+                            <hr>
+                            <p class="text-right">Committed by <label>Fowafolo</label></p>
+                            <p class="text-right">2015-08-07 12:35</p>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="box">
-                <div class="thumbnail">
-                    <br>
-                    <div class="text-center">
-                        <div class="circle"><h4>Fowafolo</h4></div>
-                    </div>
-                    <div class="caption">
-                        <h3 class="text-center">考试范围</h3>
-                        <hr>
-                        <p>谁知道这门课的考试范围和重点呀？谁知道这门课的考试范围和重点呀？谁知道这门课的考试范围和重点呀？谁知道这门课的考试范围和重点呀？谁知道这门课的考试范围和重点呀？</p>
-                        <hr>
-                        <p class="text-right">2015-08-07 12:35</p>
+                <div class="box">
+                    <div class="thumbnail">
+                        <br>
+                        <div class="text-center">
+                            <div class="circle"></div>
+                        </div>
+                        <div class="caption">
+                            <h3 class="text-center">考试范围</h3>
+                            <hr>
+                            <p>谁知道这门课的考试范围和重点呀？</p>
+                            <hr>
+                            <p class="text-right">Committed by <label>Fowafolo</label></p>
+                            <p class="text-right">2015-08-07 12:35</p>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="box">
-                <div class="thumbnail">
-                    <br>
-                    <div class="text-center">
-                        <div class="circle"><h4>Fowafolo</h4></div>
+                <div class="box">
+                    <div class="thumbnail">
+                        <br>
+                        <div class="text-center">
+                            <div class="circle"></div>
+                        </div>
+                        <div class="caption">
+                            <h3 class="text-center">考试范围</h3>
+                            <hr>
+                            <p>谁知道这门课的考试范围和重点呀？</p>
+                            <hr>
+                            <p class="text-right">Committed by <label>Fowafolo</label></p>
+                            <p class="text-right">2015-08-07 12:35</p>
+                        </div>
                     </div>
-                    <div class="caption">
-                        <h3 class="text-center">考试范围</h3>
-                        <hr>
-                        <p>谁知道这门课的考试范围和重点呀？</p>
-                        <hr>
-                        <p class="text-right">2015-08-07 12:35</p>
+                </div>
+                <div class="box">
+                    <div class="thumbnail">
+                        <br>
+                        <div class="text-center">
+                            <div class="circle"></div>
+                        </div>
+                        <div class="caption">
+                            <h3 class="text-center">考试范围</h3>
+                            <hr>
+                            <p>谁知道这门课的考试范围和重点呀？谁知道这门课的考试范围和重点呀？谁知道这门课的考试范围和重点呀？谁知道这门课的考试范围和重点呀？谁知道这门课的考试范围和重点呀？</p>
+                            <hr>
+                            <p class="text-right">Committed by <label>Fowafolo</label></p>
+                            <p class="text-right">2015-08-07 12:35</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="thumbnail">
+                        <br>
+                        <div class="text-center">
+                            <div class="circle"></div>
+                        </div>
+                        <div class="caption">
+                            <h3 class="text-center">考试范围</h3>
+                            <hr>
+                            <p>谁知道这门课的考试范围和重点呀？</p>
+                            <hr>
+                            <p class="text-right">Committed by <label>Fowafolo</label></p>
+                            <p class="text-right">2015-08-07 12:35</p>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-        </div>
-        <!-- <div class="row">
-            <div class="col-md-3">
-                <div></div>
-            </div>
-            <div class="col-md-9">
-                <div></div>
-            </div>
-        </div> -->
     </div>
     
     <hr>
@@ -191,18 +260,14 @@
         });
     </script>
     <script type="text/javascript">
-        var colorList = ["#FFFF99","#B5FF91","#94DBFF","#FFBAFF","#FFBD9D","#C7A3ED","#CC9898","#8AC007","#CCC007","#FFAD5C"];
-
-        function getColorByRandom(colorList){
-            var colorIndex = Math.floor(Math.random()*colorList.length);
-            var color = colorList[colorIndex];
-            colorList.splice(colorIndex,1);
-            return color;
+        function getPicByRandom(){
+            var picIndex = Math.floor(Math.random()*8+1);
+            return picIndex;
         }
         $(document).ready(function(){
             $(".circle").each(function(){
-                var color = getColorByRandom(colorList);
-                $(this).css('background-color', color);
+                var index = getPicByRandom();
+                $(this).css('background-image', 'url("../../images/avatar/' + index + '.jpg")');
             })
         })
     </script>
