@@ -1,0 +1,38 @@
+.box {
+	width: 26%;
+}
+
+.center {
+	position: relative;
+	left: 0;
+}
+
+@media screen and (max-width: 1080px) {
+    .box {
+		width: 40%;
+	}
+	.center {
+		left: 5%;
+	}
+}
+
+@media screen and (max-width: 533px) {
+    .box {
+		width: 80%;
+	}
+}
+
+.panel-heading > h4 {
+	margin-top: 0;
+	margin-bottom: 0;
+}
+
+@media screen and (min-width: 768px) {
+	.panel {
+		margin-top: 20px;
+	}
+
+	.btn-success {
+		width: 70%;
+	}
+}

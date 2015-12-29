@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>My Space | Camplus</title>
+    <!-- bootstrap css -->
+    <link href="../../external/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <!-- bootstrap js -->
+    <script src="../../external/jQuery/jquery-1.11.3.min.js"></script>
+    <script src="../../external/bootstrap/js/bootstrap.min.js"></script>
+    <script src="../../js/selfinfo.js"></script>
+    <!-- custom -->
+    <link rel="stylesheet" type="text/css" href="../../css/navbar.css">
+    <link rel="stylesheet" type="text/css" href="../../css/gallery.css">
+    <link rel="stylesheet" type="text/css" href="../../css/myspace.css">
+</head>
+<body>
+    <div class="navbar navbar-inverse">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                        data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href=""></a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+                <ul class="nav navbar-nav">
+                    <li><a href="">Home</a></li>
+                    <li><a href="">Carpool</a></li>
+                    <li><a href="">Course</a></li>
+                    <li class="dropdown active">
+                        <a href="#" data-toggle="dropdown">Gallery<span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="">Album</a></li>
+                            <li><a href="">Hot</a></li>
+                            <li class="active"><a href="">My space</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" data-toggle="dropdown">Information<span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="">Map</a></li>
+                            <li><a href="">Take Out</a></li>
+                            <li><a href="">Shuttle</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                    <!-- TODO: deal with session -->
+                    <!-- <button type="button" onclick="signup()" class="btn btn-signup navbar-btn">Sign up</button>
+                    <button type="button" onclick="signin()" class="btn btn-signin navbar-btn">Sign in</button> -->
+                    <li><a href="">Fowafolo An</a></li>
+                    <li><a href=""><span class="glyphicon glyphicon-log-out" aria-hidden="true"></span></a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="container body">
+        <div class="page-header text-center">
+            <h1>My Space</h1>
+            <p>Upload your picture or view your pictures!</p>
+        </div>
+        <div class="row">
+            <div class="col-md-3">
+                <div class="panel panel-success">
+                    <div class="panel-heading">
+                        <h4>Upload</h4>
+                    </div>
+                    <!-- TODO: 上传表单 -->
+                    <div class="panel-body">
+                        <form>
+                            <div class="form-group">
+                                <input type="file" id="exampleInputFile">
+                            </div>
+                        </form>
+                        <div class="text-center">
+                            <button type="submit" class="btn btn-success">Submit</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-9">
+                <div class="center">
+                    <br>
+                    <div id="masonry" class="container-fluid">
+                        <!-- TODO: 一个box为一个单位，动态添加图片和评论 -->
+                        <div class="box">
+                            <div class="thumbnail">
+                                <br>
+                                <div class="text-center">
+                                    <div class="circle"></div>
+                                </div>
+                                <div class="caption text-center">
+                                    <!-- TODO: 填入图片 -->
+                                    <a href="" data-toggle="modal" data-target="#myModal"><img class="img-responsive" src="../../images/carousel-1.jpg"></a>
+                                    <hr>
+                                    <!-- TODO: 删除图片 -->
+                                    <div class="text-center">
+                                        <button type="submit" class="btn btn-danger btn-sm">Delete</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="box">
+                            <div class="thumbnail">
+                                <br>
+                                <div class="text-center">
+                                    <div class="circle"></div>
+                                </div>
+                                <div class="caption text-center">
+                                    <!-- TODO: 填入图片 -->
+                                    <a href="" data-toggle="modal" data-target="#myModal"><img class="img-responsive" src="../../images/carousel-1.jpg"></a>
+                                    <hr>
+                                    <!-- TODO: 填入评论 -->
+                                    <div>Wow, what a beautiful picture!</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="box">
+                            <div class="thumbnail">
+                                <br>
+                                <div class="text-center">
+                                    <div class="circle"></div>
+                                </div>
+                                <div class="caption text-center">
+                                    <!-- TODO: 填入图片 -->
+                                    <a href="" data-toggle="modal" data-target="#myModal"><img class="img-responsive" src="../../images/carousel-1.jpg"></a>
+                                    <hr>
+                                    <!-- TODO: 填入评论 -->
+                                    <div>Wow, what a beautiful picture!</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="box">
+                            <div class="thumbnail">
+                                <br>
+                                <div class="text-center">
+                                    <div class="circle"></div>
+                                </div>
+                                <div class="caption text-center">
+                                    <!-- TODO: 填入图片 -->
+                                    <a href="" data-toggle="modal" data-target="#myModal"><img class="img-responsive" src="../../images/carousel-1.jpg"></a>
+                                    <hr>
+                                    <!-- TODO: 填入评论 -->
+                                    <div>Wow, what a beautiful picture!</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        
+        <div>
+            <nav>
+                <!-- TODO: 翻页功能 -->
+                <ul class="pager">
+                    <li><a href="#" class="inverse">Head</a></li>
+                    <li><a href="#">Previous</a></li>
+                    <li><a href="#">Next</a></li>
+                    <li><a href="#" class="inverse">Tail</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+    
+    <hr>
+    <footer class="home-footer">
+        <div class="home-footer-text">
+            <p>Address: 4800 Cao An Road, Jiading District, Shanghai</p>
+            <p>email: Fowafolo@gmail.com</p>
+            <p>&copy; 2015-2016  &middot; <a href="home">Camplus</a> &middot; All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Modal -->
+    <div class="modal fade bs-example-modal-lg" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title" id="myModalLabel">View Picture</h4>
+                </div>
+                <div class="modal-body">
+                    <!-- TODO: 填入图片 -->
+                    <a href="" data-toggle="modal" data-target="#myModal"><img class="img-responsive" src="../../images/carousel-1.jpg"></a>
+                    <h4>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript" src="../../external/jQuery/jquery.masonry.min.js"></script> 
+    <script type="text/javascript">
+        $(function(){
+            var $container = $('#masonry');
+            $container.imagesLoaded( function(){
+                $container.masonry({
+                    itemSelector : '.box',
+                    gutterWidth : 0,
+                    isAnimated: true,
+                });
+            });
+        });
+    </script>
+</body>
+</html>
