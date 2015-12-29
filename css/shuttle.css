@@ -12,3 +12,8 @@ label {
 		margin-left: 15%;
 	}
 }
+
+#pano_holder,
+#container{
+    min-height:767px;
+}
