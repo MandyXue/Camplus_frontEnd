@@ -9,10 +9,13 @@ p {
 	color: rgba(0,0,0,.5);
 }
 
+.navbar {
+	margin-bottom: 0;
+}
+
 
 /* Carousel base class */
 .carousel {
-	margin-top: 58px;
 	height: 550px;
 	margin-bottom: 60px;
 }
