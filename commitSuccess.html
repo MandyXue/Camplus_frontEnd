@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<!-- TODO: 这个页面想要复用，所有的评论都跳到这个页面来然后跳回去。。不好实现的话只能多加几个页面了 -->
 <html lang="zh-CN">
 <head>
     <meta charset="utf-8">
@@ -6,12 +7,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Carpool | Camplus</title>
     <!-- bootstrap css -->
-    <link href="../../external/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="external/bootstrap/css/bootstrap.min.css" rel="stylesheet">
     <!-- bootstrap js -->
-    <script src="../../external/jQuery/jquery-1.11.3.min.js"></script>
-    <script src="../../external/bootstrap/js/bootstrap.min.js"></script>
+    <script src="external/jQuery/jquery-1.11.3.min.js"></script>
+    <script src="external/bootstrap/js/bootstrap.min.js"></script>
     <!-- custom -->
-    <link rel="stylesheet" type="text/css" href="../../css/navbar.css">
+    <link rel="stylesheet" type="text/css" href="css/navbar.css">
     <script type="text/javascript">
         var i = 3; 
         var intervalid; 
@@ -19,7 +20,7 @@
         function fun() { 
             if (i == 0) { 
                 // TODO: 这里这个url有可能会改
-                window.location.href = "/camplus/carpool/select"; 
+                window.location.href = ""; 
                 clearInterval(intervalid); 
             } 
             $("#timer").html(i); 
@@ -43,6 +44,7 @@
             <div class="collapse navbar-collapse" id="navbar">
                 <ul class="nav navbar-nav">
                     <li><a href="">Home</a></li>
+                    <!-- TODO: 这里有一个动态加载的问题，如果觉得难做就把下面这个active样式删掉吧 -->
                     <li class="active"><a href="">Carpool</a></li>
                     <li><a href="">Course</a></li>
                     <li class="dropdown">
