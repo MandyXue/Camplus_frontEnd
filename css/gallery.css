@@ -51,3 +51,28 @@ span.glyphicon-heart:hover {
 .pager li>a.inverse:hover {
 	background-color: #2e6da4;
 }
+
+/*aaaa*/
+.page-form > form {
+	display: inline-block;
+}
+
+.page-form > form > input{
+	display: inline-block;
+    padding: 5px 14px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 15px;
+    color: #337ab7;
+    text-decoration: none;
+}
+
+.page-form > form > input.inverse{
+	display: inline-block;
+    padding: 5px 14px;
+    color: white;
+    background-color: #337ab7;
+    border: none;
+    border-radius: 15px;
+    text-decoration: none;
+}
