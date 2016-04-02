@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Restaurant | Camplus</title>
+    <!-- bootstrap css -->
+    <link href="../../external/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <!-- bootstrap js -->
+    <script src="../../external/jQuery/jquery-1.11.3.min.js"></script>
+    <script src="../../external/bootstrap/js/bootstrap.min.js"></script>
+    <!-- custom -->
+    <link rel="stylesheet" type="text/css" href="../../css/navbar.css">
+    <link rel="stylesheet" type="text/css" href="../../css/restaurant.css">
+</head>
+<body>
+    <div class="navbar navbar-inverse">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                        data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href=""></a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+                <ul class="nav navbar-nav">
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="../carpool/carpoolHome.html">Carpool</a></li>
+                    <li><a href="../course/courseSearch.html">Course</a></li>
+                    <li class="dropdown">
+                        <a href="#" data-toggle="dropdown">Gallery<span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="../gallery/galleryHome.html">Album</a></li>
+                            <li><a href="../gallery/galleryHotComment.html">Hot</a></li>
+                            <li><a href="../gallery/galleryMySpace.html">My space</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown active">
+                        <a href="#" data-toggle="dropdown">Information<span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="locationHome.html">Map</a></li>
+                            <li class="active"><a href="restaurantHome.html">Take Out</a></li>
+                            <li><a href="busTimeHome.html">Shuttle</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                    <!-- TODO: deal with session -->
+                    <!-- <button type="button" onclick="signup()" class="btn btn-signup navbar-btn">Sign up</button>
+                    <button type="button" onclick="signin()" class="btn btn-signin navbar-btn">Sign in</button> -->
+                    <li><a href="../selfinfo.html">Fowafolo An</a></li>
+                    <li><a href="../login.html"><span class="glyphicon glyphicon-log-out" aria-hidden="true"></span></a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="container body">
+        <div class="page-header text-center">
+            <!-- TODO: 填入菜品名称 -->
+            <h1>鱼香肉丝</h1>
+        </div>
+        <div class="row">
+            <!-- TODO: 循环插入 -->
+            <div class="col-md-3 col-sm-4">
+                <div class="panel panel-default">
+                    <div class="panel-body text-center">
+                        <!-- TODO: 需要的信息依次为：图片、饭馆名称、电话、种类、评分、价格，并且注意span标签后的br标签 -->
+                        <img src="../../images/temp.jpg" class="img-responsive">
+                        <h4>乐惠面馆</h4>
+                        <p><span class="glyphicon glyphicon-earphone" aria-hidden="true"></span> 13528794795</p>
+                        <div class="row">
+                            <div class="col-xs-4">
+                                <p><span class="glyphicon glyphicon-cutlery" aria-hidden="true"></span><br>肉类</p>
+                            </div>
+                            <div class="col-xs-4">
+                                <p><span class="glyphicon glyphicon-star" aria-hidden="true"></span><br>5.0</p>
+                            </div>
+                            <div class="col-xs-4">
+                                <p><span class="glyphicon glyphicon-yen" aria-hidden="true"></span><br>12.0</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <hr>
+    <footer class="home-footer">
+        <div class="home-footer-text">
+            <p>Address: 4800 Cao An Road, Jiading District, Shanghai</p>
+            <p>email: Fowafolo@gmail.com</p>
+            <p>&copy; 2015-2016  &middot; <a href="home">Camplus</a> &middot; All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>

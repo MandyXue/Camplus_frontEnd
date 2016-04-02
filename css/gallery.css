@@ -1,0 +1,78 @@
+.box {
+	margin-right: 40px;
+	margin-bottom: 20px;
+	width: 20%;
+}
+
+.center {
+	position: relative;
+	left: 4%;
+}
+
+@media screen and (max-width: 1080px) {
+    .box {
+		width: 40%;
+	}
+}
+
+@media screen and (max-width: 533px) {
+    .box {
+		width: 80%;
+	}
+}
+
+hr {
+	margin-top: 15px;
+	margin-bottom: 10px;
+}
+
+span.glyphicon-heart {
+	color: #ff7070;
+}
+
+span.glyphicon-heart:hover {
+	color: #ea0000;
+}
+
+.modal-footer {
+	margin-top: -20px;
+}
+
+.col-md-6 > p {
+	margin-top: 10px;
+}
+
+.pager li>a.inverse {
+	color: white;
+	background-color: #337ab7;
+	border: none;
+}
+
+.pager li>a.inverse:hover {
+	background-color: #2e6da4;
+}
+
+/*aaaa*/
+.page-form > form {
+	display: inline-block;
+}
+
+.page-form > form > input{
+	display: inline-block;
+    padding: 5px 14px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 15px;
+    color: #337ab7;
+    text-decoration: none;
+}
+
+.page-form > form > input.inverse{
+	display: inline-block;
+    padding: 5px 14px;
+    color: white;
+    background-color: #337ab7;
+    border: none;
+    border-radius: 15px;
+    text-decoration: none;
+}

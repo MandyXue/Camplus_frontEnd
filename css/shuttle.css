@@ -1,0 +1,19 @@
+.underline {
+	text-decoration: underline;
+}
+
+label {
+	font-weight: normal;
+}
+
+@media screen and (min-width: 768px) {
+	.table {
+		width: 70%;
+		margin-left: 15%;
+	}
+}
+
+#pano_holder,
+#container{
+    min-height:767px;
+}

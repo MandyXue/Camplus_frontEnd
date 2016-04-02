@@ -1,0 +1,12 @@
+.panel-heading > h4 {
+	margin-top: 0;
+	margin-bottom: 0;
+}
+
+.row {
+	margin-top: 20px;
+}
+
+.panel-body > .row {
+	margin-top: 0;
+}

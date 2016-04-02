@@ -1,0 +1,74 @@
+
+p > label {
+	font-weight: bold;
+}
+
+.circle {
+	margin-left: 50%;
+	position: relative;
+	left: -60px;
+	width: 120px;
+	height: 120px;
+	-moz-border-radius: 60px;
+	-webkit-border-radius: 60px;
+	border-radius: 60px;
+	background-image: url("../images/avatar/1.jpg");
+	background-size: 100% 100%;
+}
+
+hr {
+	margin-top: 20px;
+}
+
+.box {
+	margin-right: 40px;
+	margin-bottom: 20px;
+	width: 20%;
+}
+
+.center {
+	position: relative;
+	left: 4%;
+}
+
+@media screen and (max-width: 1080px) {
+    .box {
+		width: 40%;
+	}
+}
+
+@media screen and (max-width: 533px) {
+    .box {
+		width: 80%;
+	}
+}
+
+@media screen and (min-width: 768px) {
+    table.detail {
+		width: 50%;
+		margin-left: 25%;
+	}
+
+	.panel {
+		width: 60%;
+		margin-left: 20%;
+	}
+
+	.btn-success {
+		width: 30%;
+	}
+}
+
+.line {
+	width: 60%;
+	background-color: rgba(0,0,0,.1);
+	height: 1px;
+	margin-left: 20%;
+	margin-top: 20px;
+	margin-bottom: 40px;
+}
+
+.panel-heading > h4 {
+	margin-top: 0;
+	margin-bottom: 0;
+}

@@ -1,0 +1,35 @@
+@media screen and (min-width: 768px) {
+    .body {
+    	width: 80%;
+    }
+    .btn.btn-success {
+    	width: 50%;
+    }
+}
+
+.form-inline {
+	display: right;
+}
+
+.pager li>a.inverse {
+	color: white;
+	background-color: #337ab7;
+	border: none;
+}
+
+.pager li>a.inverse:hover {
+	background-color: #2e6da4;
+}
+
+p > label {
+	font-weight: bold;
+}
+
+.nav.nav-pills {
+	width: 100%;
+}
+
+.panel-heading > h4 {
+	margin-top: 0;
+	margin-bottom: 0;
+}

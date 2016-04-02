@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+  <head>
+    <!-- TODO: 这边的图片链接有点问题。合代码时在浏览器里检查一下，再放到相应目录里。。
+    现在是放在/images/loginAndRegister里的 -->
+    <meta charset="utf-8">
+    <title>Register | Camplus</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <!-- CSS -->
+    <link rel="stylesheet" href="../external/loginAndRegister/css/reset.css">
+    <link rel="stylesheet" href="../external/loginAndRegister/css/supersized.css">
+    <link rel="stylesheet" href="../external/loginAndRegister/css/style.css">
+    <!-- jQuery -->
+    <script src="../external/jQuery/jquery-1.11.3.min.js"></script>
+    <script src="../external/jQuery/jquery.validate.js"></script>
+    <script src="../external/loginAndRegister/js/supersized.3.2.7.min.js"></script>
+    <script src="../external/loginAndRegister/js/supersized-init.js"></script>
+    <!-- custom js -->
+    <script src="../external/loginAndRegister/js/customer-validate.js"></script>
+  </head>
+  <body>
+    <div class="page-container">
+      <h1>Register</h1>
+      <!-- TODO: 验收form可否使用 -->
+      <form action="" method="post" id="userRegister" style="color:#d04f24">
+        <input type="text" name="userId" class="userId" placeholder="Student Id" style="font-weight: 900" id="userId">
+        <input type="password" name="userPassword" class="userPassword" id="userPassword" placeholder="Password" style="font-weight: 900">
+        <input type="password" name="userPasswordAgain" class="userPassword" id="userPasswordAgain" placeholder="Password Again" style="font-weight: 900">
+        <input type="text" name="userName" class="userName" placeholder="Your Name" style="font-weight: 900">
+        <button type="submit" style="font-weight: 900">Register</button>
+      </form>
+      <div class="connect">
+        <!-- TODO: 添加链接至登录 -->
+        <p>Or Log In  <a href="login.htmlre">here</a></p>
+      </div>
+    </div>
+  </body>
+</html>

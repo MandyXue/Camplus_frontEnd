@@ -1,0 +1,17 @@
+p {
+	color: rgba(0,0,0,.5);
+}
+
+@media screen and (min-width: 768px) {
+	.body {
+		width: 40%;
+	}
+
+	.text-center .btn {
+		width: 30%;
+	}
+}
+
+.col-xs-9 > button {
+	margin-top: 35px;
+}

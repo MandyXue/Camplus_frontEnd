@@ -1,0 +1,75 @@
+.navbar {
+	height: 58px;
+    border-radius: 0;
+    z-index: 20;
+}
+
+.navbar-nav {
+	margin-top: 4px;
+}
+
+
+/* Custom sign up button */
+.btn-signup {
+    color: #333;
+    text-shadow: none;
+    background-color: rgba(255, 255, 255, 0.8);
+    font-weight: bold;
+}
+
+.btn-signup:hover {
+    background-color: #fff;
+}
+
+/*Custom sign in button*/
+.btn-signin {
+    color: rgba(255, 255, 255, 0.8);
+    text-shadow: none;
+    background-color: rgba(0, 0, 0, 0);
+    border: 1px solid rgba(255, 255, 255, 0.8);
+    font-weight: bold;
+}
+
+.btn-signin:hover {
+    color: #fff;
+    border: 1px solid #fff;
+}
+
+a.navbar-brand {
+	margin-top: 13px;
+	width: 100px;
+	height: 30px;
+	background-image: url(../images/logo.png);
+	background-size: 77px 30px;
+	background-repeat: no-repeat;
+}
+
+@media screen and (max-width: 768px) {
+    a.navbar-brand {
+    	margin-left: 20px;
+    }
+    .btn-signin,
+    .btn-signup {
+        margin-left: 20px;
+    }
+}
+
+a.navbar-brand:hover{
+	background-image: url(../images/logo2.png);
+}
+
+.navbar-collapse {
+    background-color: #222;
+}
+
+footer {
+    margin-bottom: 30px;
+    text-align: center;
+    color: rgba(0,0,0,.5);
+    font-size: 15px;
+}
+
+hr {
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
