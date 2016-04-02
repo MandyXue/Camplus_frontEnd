@@ -29,23 +29,23 @@
             </div>
             <div class="collapse navbar-collapse" id="navbar">
                 <ul class="nav navbar-nav">
-                    <li><a href="">Home</a></li>
-                    <li><a href="">Carpool</a></li>
-                    <li><a href="">Course</a></li>
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="../carpool/carpoolHome.html">Carpool</a></li>
+                    <li><a href="../course/courseSearch.html">Course</a></li>
                     <li class="dropdown active">
                         <a href="#" data-toggle="dropdown">Gallery<span class="caret"></span></a>
                         <ul class="dropdown-menu">
-                            <li><a href="">Album</a></li>
-                            <li class="active"><a href="">Hot</a></li>
-                            <li><a href="">My space</a></li>
+                            <li><a href="galleryHome.html">Album</a></li>
+                            <li class="active"><a href="galleryHotComment.html">Hot</a></li>
+                            <li><a href="galleryMySpace.html">My space</a></li>
                         </ul>
                     </li>
                     <li class="dropdown">
                         <a href="#" data-toggle="dropdown">Information<span class="caret"></span></a>
                         <ul class="dropdown-menu">
-                            <li><a href="">Map</a></li>
-                            <li><a href="">Take Out</a></li>
-                            <li><a href="">Shuttle</a></li>
+                            <li><a href="../information/locationHome.html">Map</a></li>
+                            <li><a href="../information/restaurantHome.html">Take Out</a></li>
+                            <li><a href="../information/busTimeHome.html">Shuttle</a></li>
                         </ul>
                     </li>
                 </ul>
@@ -53,8 +53,8 @@
                     <!-- TODO: deal with session -->
                     <!-- <button type="button" onclick="signup()" class="btn btn-signup navbar-btn">Sign up</button>
                     <button type="button" onclick="signin()" class="btn btn-signin navbar-btn">Sign in</button> -->
-                    <li><a href="">Fowafolo An</a></li>
-                    <li><a href=""><span class="glyphicon glyphicon-log-out" aria-hidden="true"></span></a></li>
+                    <li><a href="../selfinfo.html">Fowafolo An</a></li>
+                    <li><a href="../login.html"><span class="glyphicon glyphicon-log-out" aria-hidden="true"></span></a></li>
                 </ul>
             </div>
         </div>
@@ -68,96 +68,6 @@
             <br>
             <div id="masonry" class="container-fluid">
                 <!-- TODO: 一个box为一个单位，动态添加图片和评论 -->
-                <div class="box">
-                    <div class="thumbnail">
-                        <br>
-                        <div class="text-center">
-                            <div class="circle"></div>
-                        </div>
-                        <div class="caption text-center">
-                            <!-- TODO: 填入图片 -->
-                            <a href="" data-toggle="modal" data-target="#myModal"><img class="img-responsive" src="../../images/carousel-1.jpg"></a>
-                            <hr>
-                            <!-- TODO: 填入评论 -->
-                            <div>Wow, what a beautiful picture!</div>
-                        </div>
-                    </div>
-                </div>
-                <div class="box">
-                    <div class="thumbnail">
-                        <br>
-                        <div class="text-center">
-                            <div class="circle"></div>
-                        </div>
-                        <div class="caption text-center">
-                            <!-- TODO: 填入图片 -->
-                            <a href="" data-toggle="modal" data-target="#myModal"><img class="img-responsive" src="../../images/carousel-1.jpg"></a>
-                            <hr>
-                            <!-- TODO: 填入评论 -->
-                            <div>Wow, what a beautiful picture!</div>
-                        </div>
-                    </div>
-                </div>
-                <div class="box">
-                    <div class="thumbnail">
-                        <br>
-                        <div class="text-center">
-                            <div class="circle"></div>
-                        </div>
-                        <div class="caption text-center">
-                            <!-- TODO: 填入图片 -->
-                            <a href="" data-toggle="modal" data-target="#myModal"><img class="img-responsive" src="../../images/carousel-1.jpg"></a>
-                            <hr>
-                            <!-- TODO: 填入评论 -->
-                            <div>Wow, what a beautiful picture!</div>
-                        </div>
-                    </div>
-                </div>
-                <div class="box">
-                    <div class="thumbnail">
-                        <br>
-                        <div class="text-center">
-                            <div class="circle"></div>
-                        </div>
-                        <div class="caption text-center">
-                            <!-- TODO: 填入图片 -->
-                            <a href="" data-toggle="modal" data-target="#myModal"><img class="img-responsive" src="../../images/carousel-1.jpg"></a>
-                            <hr>
-                            <!-- TODO: 填入评论 -->
-                            <div>Wow, what a beautiful picture!</div>
-                        </div>
-                    </div>
-                </div>
-                <div class="box">
-                    <div class="thumbnail">
-                        <br>
-                        <div class="text-center">
-                            <div class="circle"></div>
-                        </div>
-                        <div class="caption text-center">
-                            <!-- TODO: 填入图片 -->
-                            <a href="" data-toggle="modal" data-target="#myModal"><img class="img-responsive" src="../../images/carousel-1.jpg"></a>
-                            <hr>
-                            <!-- TODO: 填入评论 -->
-                            <div>Wow, what a beautiful picture!</div>
-                        </div>
-                    </div>
-                </div>
-                <div class="box">
-                    <div class="thumbnail">
-                        <br>
-                        <div class="text-center">
-                            <div class="circle"></div>
-                        </div>
-                        <div class="caption text-center">
-                            <!-- TODO: 填入图片 -->
-                            <a href="" data-toggle="modal" data-target="#myModal"><img class="img-responsive" src="../../images/carousel-1.jpg"></a>
-                            <hr>
-                            <!-- TODO: 填入评论 -->
-                            <div>Wow, what a beautiful picture!</div>
-                        </div>
-                    </div>
-                </div>
                 <div class="box">
                     <div class="thumbnail">
                         <br>
@@ -226,18 +136,6 @@
                 </div>
             </div>
         </div>
-    </div>
-    <div class="page-form">
-    <form action="/camplus/carpool/select?departure=${requestScope.departure}&desination=${requestScope.destination}" method="get">
-        <input type="hidden" name="departure" value="${requestScope.departure}"/>
-        <input type="hidden" name="destination" value="${requestScope.destination}"/>
-        <input type="submit" name="indexmove" value="next"/>
-      </form>
-      <form action="/camplus/carpool/select?departure=${requestScope.departure}&desination=${requestScope.destination}" method="get">
-        <input type="hidden" name="departure" value="${requestScope.departure}"/>
-        <input type="hidden" name="destination" value="${requestScope.destination}"/>
-        <input class="inverse" type="submit" name="indexmove" value="tail"/>
-      </form>
     </div>
     <script type="text/javascript" src="../../external/jQuery/jquery.masonry.min.js"></script> 
     <script type="text/javascript">

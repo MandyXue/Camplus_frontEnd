@@ -30,30 +30,30 @@
             <div class="collapse navbar-collapse" id="navbar">
                 <!-- TODO: 这里要添加所有标签的URL -->
                 <ul class="nav navbar-nav">
-                    <li class="active"><a href="">Home</a></li>
-                    <li><a href="">Carpool</a></li>
-                    <li><a href="">Course</a></li>
+                    <li class="active"><a href="index.html">Home</a></li>
+                    <li><a href="carpool/carpoolHome.html">Carpool</a></li>
+                    <li><a href="course/courseSearch.html">Course</a></li>
                     <li class="dropdown">
                         <a href="#" data-toggle="dropdown">Gallery<span class="caret"></span></a>
                         <ul class="dropdown-menu">
-                            <li><a href="">Album</a></li>
-                            <li><a href="">Hot</a></li>
-                            <li><a href="">My space</a></li>
+                            <li><a href="gallery/galleryHome.html">Album</a></li>
+                            <li><a href="gallery/galleryHotComment.html">Hot</a></li>
+                            <li><a href="gallery/galleryMySpace.html">My space</a></li>
                         </ul>
                     </li>
                     <li class="dropdown">
                         <a href="#" data-toggle="dropdown">Information<span class="caret"></span></a>
                         <ul class="dropdown-menu">
-                            <li><a href="">Map</a></li>
-                            <li><a href="">Take Out</a></li>
-                            <li><a href="">Shuttle</a></li>
+                            <li><a href="information/locationHome.html">Map</a></li>
+                            <li><a href="information/restaurantHome.html">Take Out</a></li>
+                            <li><a href="information/busTimeHome.html">Shuttle</a></li>
                         </ul>
                     </li>
                 </ul>
                 <ul class="nav navbar-nav navbar-right">
                     <!-- TODO: 这里要处理一下session，现在注释的部分是没有登录的 -->
-                    <button type="button" onclick="signup()" class="btn btn-signup navbar-btn">Sign up</button>
-                    <button type="button" onclick="signin()" class="btn btn-signin navbar-btn">Sign in</button>
+                    <button type="button" onclick="window.location.href='register.html'" class="btn btn-signup navbar-btn">Sign up</button>
+                    <button type="button" onclick="window.location.href='login.html'" class="btn btn-signin navbar-btn">Sign in</button>
                     <!-- <li><a href="">Fowafolo An</a></li>
                     <li><a href=""><span class="glyphicon glyphicon-log-out" aria-hidden="true"></span></a></li> -->
                 </ul>
